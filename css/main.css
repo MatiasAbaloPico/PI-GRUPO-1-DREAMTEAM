@@ -1,6 +1,39 @@
-.homebody {background-color: gray;
+body {background-color: gray;}
+#categorias{
+    display: flex;
+    padding: 0px 150px;
+    position: relative;
+    justify-content: flex-start;
+}
 
-
+#fondocat{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(36, 36, 84);
+    border-radius: 40px;
+    flex-direction: column;
+    padding: 20px 50px;
+}
+.botcat{
+display: flex;
+flex-direction: row;
+justify-content: center;
+justify-content: space-around;
+}
+.butt{
+    background-color: gray;
+    color: white;
+    font-size: 30px;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    transition: background-color 0.2s ease;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+.butt:hover{
+    background-color: black;
 }
 
 /* .Css detail-movie.html */
@@ -11,4 +44,3 @@
 .titulo_detail { font-family: 'Open Sans', sans-serif;
                  font-family: 'Raleway', sans-serif;
                  font-family: 'Work Sans', sans-serif;
-}
