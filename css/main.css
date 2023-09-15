@@ -331,3 +331,31 @@ body {
             padding: 10px;
 
 }
+
+/* Css footer */
+
+.footer {
+    background-color: rgb(159, 1, 1);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+    
+    
+}
+.item-footer {
+    display: inline-block;
+    margin-right: px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 10px;
+
+}
+.footer1 {
+    padding: 0;
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+}
+
