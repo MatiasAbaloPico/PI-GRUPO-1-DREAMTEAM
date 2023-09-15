@@ -1,46 +1,90 @@
-body {background-color: gray;}
-#categorias{
+body {
+    background-image: url(./img/fondo-azul.avif);
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+    
+}
+
+.inicio {
+    color: rgb(rgb(228, 213, 213), rgb(49, 116, 49), rgb(94, 94, 141));
+    margin-bottom: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 400px;
+    background-image: url(./img/fondo.jpg);
+    background-size: cover;
     display: flex;
-    padding: 0px 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    color: aliceblue;
     position: relative;
-    justify-content: flex-start;
+    left: 10%;
 }
 
-#fondocat{
+h3{
+    color: aliceblue;
+}
+
+#fotos {
     display: flex;
     justify-content: center;
-    background-color: rgb(36, 36, 84);
-    border-radius: 40px;
-    flex-direction: column;
-    padding: 20px 50px;
+
 }
-.botcat{
-display: flex;
-flex-direction: row;
-justify-content: center;
-justify-content: space-around;
+
+#fotos img {
+    border: 2px solid white;
+    width: 90%;
+    /* Ajusta el tamaño */
+    height: 300px;
+    /* Ajusta el tamaño */
+    object-fit: cover;
+    /* Ajusta el ajuste de la imagen */
+    margin: 10px;
+    /* Ajusta el margen entre las imágenes */
+    position: relative;
+
+
 }
-.butt{
-    background-color: gray;
-    color: white;
-    font-size: 30px;
-    padding: 30px 80px;
+
+
+
+
+.foto {
+    display: inline-block;
+}
+
+
+.encabezado {
+
+    
+    background-color: cadetblue;
     display: flex;
-    justify-content: center;
-    border: none;
-    transition: background-color 0.2s ease;
-    border-radius: 20px;
     justify-content: space-between;
-}
-.butt:hover{
-    background-color: black;
+    height: 50px;
 }
 
-/* .Css detail-movie.html */
-.detail {   background-color: grey;
-
+.direcciones {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    
 }
 
-.titulo_detail { font-family: 'Open Sans', sans-serif;
-                 font-family: 'Raleway', sans-serif;
-                 font-family: 'Work Sans', sans-serif;
+.buscador {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+
+.buscador input[type="search"] {
+ margin-right: 10px;
+background-color: transparent; /* Establece el fondo transparente */
+border: none; /* Elimina el borde */
+outline: none; /* Elimina el contorno al hacer clic */
+}
+
+
