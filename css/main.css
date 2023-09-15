@@ -79,6 +79,8 @@
 
 h3 {
     color: aliceblue;
+    left: 40px;
+    position: relative;
 }
 
 #fotos {
@@ -116,13 +118,24 @@ h3 {
     background-color: cadetblue;
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 40px;
 }
 
 .direcciones {
     display: flex;
     justify-content: center;
-    padding-left: 10px;
+    padding-right: 3%;
+    align-items: center;
+
+
+}
+
+.link {
+    color: black;
+    /* Cambia el color del texto del enlace */
+    text-decoration: none;
+    /* Elimina la línea de subrayado */
+    padding-right: 30px;
 
 }
 
@@ -147,65 +160,73 @@ body {
     padding: 0%;
     margin: 0%;
     border: 0%;
-    
+
 }
 
 
 /* .Css detail-movie.html */
 
-#moviedet { background-color: black;
+#moviedet {
+    background-color: black;
     border-radius: 30px;
     height: 800px;
     display: flex;
     flex-direction: column;
 }
 
-.titulo_detail { font-family: 'Open Sans', sans-serif;
+.titulo_detail {
+    font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
     font-family: 'Work Sans', sans-serif;
-    color: aliceblue; 
+    color: aliceblue;
     margin-left: 5%;
     margin-top: 3%;
     margin-bottom: 2%;
     font-weight: bolder;
 }
 
-.infoduracion { color: rgba(255,255,255,0.7);
-                flex-direction: row;
-                margin-left: 20px ;
-                font-family: 'Open Sans', sans-serif;
-                font-family: 'Raleway', sans-serif;
-                font-family: 'Roboto', sans-serif;
-                font-family: 'Work Sans', sans-serif;
-                list-style-type: none;
-                
+.infoduracion {
+    color: rgba(255, 255, 255, 0.7);
+    flex-direction: row;
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    list-style-type: none;
+
 
 
 }
 
-.rating { margin-left: 50px;
+.rating {
+    margin-left: 50px;
 
 }
 
-#moviedet2 { flex-direction: row;
-             display: flex;
-             margin-left: 50px;
+#moviedet2 {
+    flex-direction: row;
+    display: flex;
+    margin-left: 50px;
 }
 
 
 
-#imgdetails {   width: 500px;
-                height: 600px;
-                border-radius: 30px;            
-}            
-
-#divpanda { background-color:rgba(240, 248, 255, 0.377);
-            border-radius: 30px;
-            margin-left: 50px;
-            margin-right: 50px;
+#imgdetails {
+    width: 500px;
+    height: 600px;
+    border-radius: 30px;
 }
 
-.titledet { color: rgba(255,255,255,0.7);
+#divpanda {
+    background-color: rgba(240, 248, 255, 0.377);
+    border-radius: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.titledet {
+    color: rgba(255, 255, 255, 0.7);
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -216,28 +237,29 @@ body {
     margin-top: 20px;
 }
 
-.infomov {  color: rgba(255,255,255,0.7);
-            font-family: 'Open Sans', sans-serif;
-            font-family: 'Raleway', sans-serif;
-            font-family: 'Roboto', sans-serif;
-            font-family: 'Work Sans', sans-serif;
-            width: 500px;
-            align-self: right;
-            font-size: 30px;
-            margin-left: 50px;
-            margin-right: 50px;
-            text-align: justify;
+.infomov {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    width: 500px;
+    align-self: right;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
 }
 
-.extrainf { font-size: 15px;
-            color: rgba(255,255,255,0.7);
-            font-family: 'Open Sans', sans-serif;
-            font-family: 'Raleway', sans-serif;
-            font-family: 'Roboto', sans-serif;
-            font-family: 'Work Sans', sans-serif;
-            margin-left: 50px;
-            margin-right: 50px;
-            text-align: justify;
-            margin-top: 150px;
+.extrainf {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    margin-top: 150px;
 }
-
