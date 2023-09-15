@@ -1,27 +1,29 @@
-body {background-color: gray;}
-#categorias{
+#categorias {
     display: flex;
     padding: 0px 150px;
     position: relative;
     justify-content: flex-start;
+    color: rgb(255, 255, 255);
 }
 
-#fondocat{
+#fondocat {
     display: flex;
     justify-content: center;
-    background-color: rgb(36, 36, 84);
+    background-color: rgba(36, 36, 84, 0.575);
     border-radius: 40px;
     flex-direction: column;
     padding: 20px 50px;
 }
-.botcat{
-display: flex;
-flex-direction: row;
-justify-content: center;
-justify-content: space-around;
-padding: 20px 0px;
+
+.botcat {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 20px 0px;
 }
-.butt{
+
+.butt {
     background-color: gray;
     color: white;
     font-size: 30px;
@@ -35,16 +37,121 @@ padding: 20px 0px;
     height: 100px;
     text-align: center;
     padding: 20px 20px;
+    border: 2px solid white;
+
 }
-.butt:hover{
+
+.butt:hover {
     background-color: black;
 }
 
 /* .Css detail-movie.html */
-.detail {   background-color: grey;
+.detail {
+    background-color: grey;
 
 }
 
-.titulo_detail { font-family: 'Open Sans', sans-serif;
-                 font-family: 'Raleway', sans-serif;
-                 font-family: 'Work Sans', sans-serif;}
+.titulo_detail {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    background-image: url(./img/fondo-azul.avif);
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+
+}
+
+.inicio {
+    color: rgb(rgb(228, 213, 213), rgb(49, 116, 49), rgb(94, 94, 141));
+    margin-bottom: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 400px;
+    background-image: url(./img/fondo.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#PI {
+    background-color: rgba(255, 255, 255, 0.797);
+    border-radius: 20px;
+    padding: 0px 10px;
+}
+
+.titulo {
+    color: aliceblue;
+    position: relative;
+    left: 10%;
+}
+
+h3 {
+    color: aliceblue;
+}
+
+#fotos {
+    display: flex;
+    justify-content: center;
+
+}
+
+#fotos img {
+    border: 2px solid white;
+    width: 200px;
+    /* Ajusta el tamaño */
+    height: 300px;
+    /* Ajusta el tamaño */
+    object-fit: cover;
+    /* Ajusta el ajuste de la imagen */
+    margin: 10px;
+    /* Ajusta el margen entre las imágenes */
+    position: relative;
+
+
+}
+
+
+
+
+.foto {
+    display: inline-block;
+}
+
+
+.encabezado {
+
+
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.direcciones {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+
+}
+
+.buscador {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+
+.buscador input[type="search"] {
+    margin-right: 10px;
+    background-color: transparent;
+    /* Establece el fondo transparente */
+    border: none;
+    /* Elimina el borde */
+    outline: none;
+    /* Elimina el contorno al hacer clic */
+}
