@@ -191,6 +191,9 @@ body {
 #listainfo { 
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .infoduracion { color: rgba(255, 255, 255, 0.703);
@@ -201,7 +204,7 @@ body {
                 font-family: 'Work Sans', sans-serif;
                 list-style-type: none;
                 display: flex;
-                padding-right: 20px;
+                padding-right: 10px;
 }
 
 #generosmovie { background-color: rgba(0, 0, 0, 0.708);
@@ -209,7 +212,8 @@ body {
     justify-content: center;
     border: 3px solid white;
     padding-right: 35px;
-    margin-left: 740px;
+    margin-left: 600px;
+    margin-right: 40px;
 }
 
 .listageneros {justify-content: space-evenly;
@@ -286,7 +290,28 @@ body {
 
 /* Css Detail-serie.html */
 
+#divfavoritos{ display: flex;
 
+
+}
+
+.textofav { color: rgba(255,255,255,0.7);
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.fa-regular.fa-star { font-size: 20px;
+
+}
+
+.botonfav { background: none;
+            border: none;
+            
+
+}
 
 
 
@@ -325,7 +350,11 @@ body {
 #listainfoser { 
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
+
 
 .infoduracionser { color: rgba(255, 255, 255, 0.703);
                 margin-left: 20px ;
@@ -342,8 +371,8 @@ body {
     border-radius: 30px;
     justify-content: center;
     border: 3px solid white;
-    margin-left: 365px;
     padding-right: 35px;
+    margin-right: 50px;
 }
 
 .listageneroserie {justify-content: space-evenly;
