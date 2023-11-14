@@ -18,8 +18,10 @@ fetch(bestRated)
         for (let i = 0; i < 5; i++) {
             let pelicula = data.results[i].title
             let pic = data.results[i].poster_path
+            let fecha = data.results[i].release_date
             fotos[0].innerHTML +=
                 `<div class="foto">
+    <h3 class="pelicula1">(${fecha})</h3>
     <a href="./detail-movie.html"><img class = 'fotos' src="https://image.tmdb.org/t/p/w500${pic}"></a>
     <h3 class="pelicula1">${pelicula}</h3>
     </div>`
@@ -41,8 +43,10 @@ fetch(popSer)
 
             let serie = data.results[i].name
             let pic = data.results[i].poster_path
+            let fecha = data.results[i].first_air_date
             fotos[1].innerHTML +=
                 `<div class="foto">
+    <h3 class="pelicula1">(${fecha})</h3>
     <a href="./detail-movie.html"><img class = 'fotos' src="https://image.tmdb.org/t/p/w500${pic}"></a>
     <h3 class="pelicula1">${serie}</h3>
     </div>`
@@ -60,12 +64,14 @@ fetch(popSer)
 
     .then(function (data) {
         for (let i = 5; i < 10; i++) {
-            let serieTod = data.results[i].name
+            let serie = data.results[i].name
             let pos = data.results[i].poster_path
+            let fecha = data.results[i].first_air_date
             fotos[2].innerHTML +=
                 `<div class="foto">
+    <h3 class="pelicula1">(${fecha})</h3>
     <a href="./detail-movie.html"><img class = 'fotos' src="https://image.tmdb.org/t/p/w500${pos}"></a>
-    <h3 class="pelicula1">${serieTod}</h3>
+    <h3 class="pelicula1">${serie}</h3>
     </div>`
         }
 
@@ -86,8 +92,10 @@ fetch(bestRated)
         for (let i = 5; i < 10; i++) {
             let pelicula = data.results[i].title
             let pic = data.results[i].poster_path
+            let fecha = data.results[i].release_date
             fotos[3].innerHTML +=
                 `<div class="foto">
+    <h3 class="pelicula1">(${fecha})</h3>
     <a href="./detail-movie.html"><img class = 'fotos' src="https://image.tmdb.org/t/p/w500${pic}"></a>
     <h3 class="pelicula1">${pelicula}</h3>
     </div>`
@@ -108,8 +116,10 @@ fetch(bestRated)
         for (let i = 10; i < 15; i++) {
             let pelicula = data.results[i].title
             let pic = data.results[i].poster_path
+            let fecha = data.results[i].release_date
             fotos[4].innerHTML +=
                 `<div class="foto">
+    <h3 class="pelicula1">(${fecha})</h3>
     <a href="./detail-movie.html"><img class = 'fotos' src="https://image.tmdb.org/t/p/w500${pic}"></a>
     <h3 class="pelicula1">${pelicula}</h3>
     </div>`
@@ -130,8 +140,10 @@ fetch(popSer)
         for (let i = 10; i < 15; i++) {
             let serieTod = data.results[i].name
             let pos = data.results[i].poster_path
+            let fecha = data.results[i].first_air_date
             fotos[5].innerHTML +=
                 `<div class="foto">
+    <h3 class="pelicula1">(${fecha})</h3>
     <a href="./detail-movie.html"><img class = 'fotos' src="https://image.tmdb.org/t/p/w500${pos}"></a>
     <h3 class="pelicula1">${serieTod}</h3>
     </div>`
