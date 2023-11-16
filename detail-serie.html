@@ -21,27 +21,30 @@
 
     <header>
         <section class="encabezado">
-    
-            <img src="./img/UdeSA.png">
-    
+
+            <img src="./css/img/UdeSA.png">
+
             <section class="direcciones">
                 <a href="./index.html" class="link">Home</a>
                 <a href="./Genres.html" class="link">Generos</a>
                 <a href="./Favorite.html" class="link">Favoritos</a>
-    
-    
-                <form action="./search-results.html" method="get">
             </section>
-    
-            <section class="buscador">
-    
-                <input type="search" placeholder="Buscar..." a />
-    
-            </section>
+            
+            <form action="./search-results.html" method="get">
+                <section class="buscador">
+
+                    <input type="search" name="q" placeholder="Buscar..." a />
+                    <div class="radio">
+                        <input type="radio" id="movie" name="type" value="movie" checked>
+                        <label for="movie">Pelicula</label>
+                        <input type="radio" id="serie" name="type" value="tv">
+                        <label for="serie">Serie</label>
+                    </div>
+                </section>
             </form>
         </section>
-    
-    
+
+
     </header>
 
 

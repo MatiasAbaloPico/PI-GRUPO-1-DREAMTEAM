@@ -14,31 +14,40 @@
 
     <header>
         <section class="encabezado">
-    
+
             <img src="./css/img/UdeSA.png">
-    
+
             <section class="direcciones">
                 <a href="./index.html" class="link">Home</a>
                 <a href="./Genres.html" class="link">Generos</a>
                 <a href="./Favorite.html" class="link">Favoritos</a>
-    
-    
-                <form action="./search-results.html" method="get">
             </section>
-    
-            <section class="buscador">
-    
-                <input type="search" placeholder="Buscar..." a />
-    
-            </section>
+            
+            <form action="./search-results.html" method="get">
+                <section class="buscador">
+
+                    <input type="search" name="q" placeholder="Buscar..." a />
+                    <!-- Radio button -->
+                    <div class="radio">
+                        <input type="radio" id="movie" name="type" value="movie" checked>
+                        <label for="movie">Pelicula</label>
+                        <input type="radio" id="serie" name="type" value="tv">
+                        <label for="serie">Serie</label>
+                    </div>
+
+                </section>
             </form>
         </section>
-    
-    
+
+
     </header>
 
 
     <h2 class="titulo">Busquedas Recientes</h2>
+    <p class="notificacion"></p>
+    <ul class="listado-elementos">
+
+    </ul>
     <div id="fotos">
         <div class="foto">
             <a href="./detail-serie.html"><img src="./img/origen.jpg"></a>
@@ -59,21 +68,22 @@
         </div>
     </div>
 
-<footer class="footer">
-    <section>
-        <article>
-            <nav class="nav-footer">
-                <ul class="footer1">
-                    <li class="item-footer">Tobias Coler |</li>
-                    <li class="item-footer">Matias Abalo Pico |</li>
-                    <li class="item-footer">Tobias Tocho |</li>
+    <footer class="footer">
+        <section>
+            <article>
+                <nav class="nav-footer">
+                    <ul class="footer1">
+                        <li class="item-footer">Tobias Coler |</li>
+                        <li class="item-footer">Matias Abalo Pico |</li>
+                        <li class="item-footer">Tobias Tocho |</li>
 
-                </ul>
-            </nav>
-        </article>
-    </section>
-</footer>
+                    </ul>
+                </nav>
+            </article>
+        </section>
+    </footer>
 
+    <script src="js/search_results.js"></script>
 </body>
 
 
