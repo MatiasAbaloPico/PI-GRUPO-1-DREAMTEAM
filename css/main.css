@@ -461,3 +461,28 @@ body {
     height: 300px;
 
 }
+
+.valoracion{
+    color: aliceblue;
+    padding-left: 10px;
+
+}
+
+.textofav{
+    padding-left: 20px;
+
+}
+
+.logoApi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.sectionfooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
