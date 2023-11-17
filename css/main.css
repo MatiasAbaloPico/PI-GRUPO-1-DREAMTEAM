@@ -54,8 +54,14 @@ a {
 
 }
 
+#rating {
+    color: aliceblue;
+}
+   
 
-
+.listageneros0{
+    padding:0px 20px ;
+}
 
 .inicio {
     color: rgb(rgb(228, 213, 213), rgb(49, 116, 49), rgb(94, 94, 141));
