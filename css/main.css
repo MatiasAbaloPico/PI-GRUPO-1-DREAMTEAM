@@ -54,6 +54,15 @@ a {
 
 }
 
+#rating {
+    color: aliceblue;
+}
+   
+
+.listageneros0{
+    padding:0px 20px ;
+}
+
 .inicio {
     color: rgb(rgb(228, 213, 213), rgb(49, 116, 49), rgb(94, 94, 141));
     margin-bottom: 10px;
@@ -76,14 +85,15 @@ a {
 
 .titulo {
     color: aliceblue;
-    position: relative;
-    left: 10%;
+    font-size: 30px;
 }
 
 h3 {
     color: aliceblue;
-    left: 40px;
-    position: relative;
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
 }
 
 .fotos {
@@ -111,7 +121,12 @@ h3 {
 
 
 .foto {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    width: 300px;
 }
 
 
@@ -426,4 +441,54 @@ body {
     list-style-type: none;
     justify-content: center;
     display: flex;
+    margin: 0%;
+}
+
+.listado-elementos{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+
+}
+
+.notificacion{
+    font-size: 30px;
+    color: aliceblue;
+
+
+}
+
+.imgBuscador{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 200px;
+    height: 300px;
+
+}
+
+.valoracion{
+    color: aliceblue;
+    padding-left: 10px;
+
+}
+
+.textofav{
+    padding-left: 20px;
+
+}
+
+.logoApi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.sectionfooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }

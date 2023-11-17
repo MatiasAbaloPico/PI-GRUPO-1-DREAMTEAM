@@ -22,7 +22,7 @@ fetch(bestRated)
             fotos[0].innerHTML +=
                 `<div class="foto">
     <h3 class="pelicula1">(${fecha})</h3>
-    <a href="./detail-movie.html"><img class = 'fotos' src="https://image.tmdb.org/t/p/w500${pic}"></a>
+    <a href="./detail-movie.html?id=${data.results[i].id}"><img class = 'fotos' src="https://image.tmdb.org/t/p/w500${pic}"></a>
     <h3 class="pelicula1">${pelicula}</h3>
     </div>`
         }
@@ -47,7 +47,7 @@ fetch(popSer)
             fotos[1].innerHTML +=
                 `<div class="foto">
     <h3 class="pelicula1">(${fecha})</h3>
-    <a href="./detail-movie.html"><img class = 'fotos' src="https://image.tmdb.org/t/p/w500${pic}"></a>
+    <a href="detail-serie.html?id=${data.results[i].id}"><img class = 'fotos' src="https://image.tmdb.org/t/p/w500${pic}"></a>
     <h3 class="pelicula1">${serie}</h3>
     </div>`
         }
@@ -70,7 +70,7 @@ fetch(popSer)
             fotos[2].innerHTML +=
                 `<div class="foto">
     <h3 class="pelicula1">(${fecha})</h3>
-    <a href="./detail-movie.html"><img class = 'fotos' src="https://image.tmdb.org/t/p/w500${pos}"></a>
+    <a href="./detail-serie.html?id=${data.results[i].id}"><img class = 'fotos' src="https://image.tmdb.org/t/p/w500${pos}"></a>
     <h3 class="pelicula1">${serie}</h3>
     </div>`
         }
@@ -141,10 +141,11 @@ fetch(popSer)
             let serieTod = data.results[i].name
             let pos = data.results[i].poster_path
             let fecha = data.results[i].first_air_date
+            let idPelicula = data.results[i].id
             fotos[5].innerHTML +=
                 `<div class="foto">
     <h3 class="pelicula1">(${fecha})</h3>
-    <a href="./detail-movie.html"><img class = 'fotos' src="https://image.tmdb.org/t/p/w500${pos}"></a>
+    <a href="./detail-serie.html?id=${idPelicula}"><img class = 'fotos' src="https://image.tmdb.org/t/p/w500${pos}"></a>
     <h3 class="pelicula1">${serieTod}</h3>
     </div>`
         }

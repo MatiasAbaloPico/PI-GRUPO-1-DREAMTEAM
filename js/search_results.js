@@ -22,17 +22,21 @@ fetch(url)
         } else {
             resultados.innerText = "Resultados para: " + search.toString();
 
-            for (let i = 0; i < 4; i++) { // 4 representa la cantidad de elementos a mostrar. Alternativa: mostrar todos = arrayResultados.length
+            for (let i = 0; i < 5; i++) { // 4 representa la cantidad de elementos a mostrar. Alternativa: mostrar todos = arrayResultados.length
                 if (type == "movie") {
+                    let pelicula = arrayResultados[i].title
+                    let pic = arrayResultados[i].poster_path
+                    let fecha = arrayResultados[i].release_date
                     listadoElementos.innerHTML += `
                         <li>
-                            <a href="detail-movie.html?id=${arrayResultados[i].id}">${arrayResultados[i].title}</a>
+                        <a href="./detail-movie.html?id=${arrayResultados[i].id}"><img class = 'imgBuscador' src="https://image.tmdb.org/t/p/w500${pic}"></a>
                         </li>
                     `
                 } else {
+                    let pic = arrayResultados[i].poster_path
                     listadoElementos.innerHTML += `
                         <li>
-                            <a href="detail-tv.html?id=${arrayResultados[i].id}">${arrayResultados[i].name}</a>
+                            <a href="detail-serie.html?id=${arrayResultados[i].id}"><img class = 'imgBuscador' src="https://image.tmdb.org/t/p/w500${pic}"</a>
                         </li>
                     `
                 }
