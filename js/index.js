@@ -145,7 +145,7 @@ fetch(popSer)
             fotos[5].innerHTML +=
                 `<div class="foto">
     <h3 class="pelicula1">(${fecha})</h3>
-    <a href="./detail-movie.html?id=${idPelicula}"><img class = 'fotos' src="https://image.tmdb.org/t/p/w500${pos}"></a>
+    <a href="./detail-serie.html?id=${idPelicula}"><img class = 'fotos' src="https://image.tmdb.org/t/p/w500${pos}"></a>
     <h3 class="pelicula1">${serieTod}</h3>
     </div>`
         }
