@@ -10,6 +10,7 @@ let infoSer = document.querySelector(".infoser")
 let emision = document.querySelector('.listageneroserie')
 let temp = document.querySelector('.listageneros')
 let rating = document.querySelector(".valoracion")
+let gen = document.querySelector(".infoduracion1")
 
 fetch(url)
     .then(function (response) {
@@ -22,6 +23,16 @@ fetch(url)
     let fecha = data.first_air_date
     let temporadas = data.number_of_seasons
     let valoracion = data.vote_average
+    for (let i = 0; i < data.genres.length; i++){
+        let genero = data.genres[i].name
+        gen.innerHTML += `<ul class="infoduracion">
+        <a href="./detail-genres.html">
+            <li class="listageneros">${genero}</li>
+        </a>
+    </ul>`
+
+
+    }
 
         titulo.innerText = data.name
         img.src = imagen
