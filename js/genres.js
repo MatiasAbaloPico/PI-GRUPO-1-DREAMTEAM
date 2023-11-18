@@ -6,6 +6,7 @@ let generosSeries = `https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey
 fetch(generosPeliculas)
 .then(response => response.json())
 .then(data => {
+    console.log(data)
     let pelisContainer = document.getElementById("peliculas-container");
     let contenido = "";
     for(let i = 0; i < 5; i++){

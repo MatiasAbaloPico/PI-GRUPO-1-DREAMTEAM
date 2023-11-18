@@ -30,8 +30,8 @@ fetch(url)
         for (let i = 0; i < data.genres.length; i++){
             let genero = data.genres[i].name
             gen.innerHTML += `<ul class="infoduracion">
-            <a href="./detail-genres.html">
-                <li class="listageneros">${genero}</li>
+            <a href="./detail-genres.html?id=${data.genres[i].id}&genrename=${data.genres[i].name}">
+                            <li class="listageneros">${genero}</li>
             </a>
         </ul>`
 

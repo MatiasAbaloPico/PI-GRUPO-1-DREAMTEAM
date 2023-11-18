@@ -15,7 +15,7 @@ fetch(bestRated)
     })
 
     .then(function (data) {
-        for (let i = 0; i < 5; i++) {
+        for (let i = 1; i < 6; i++) {
             let pelicula = data.results[i].title
             let pic = data.results[i].poster_path
             let fecha = data.results[i].release_date
@@ -89,7 +89,7 @@ fetch(bestRated)
     })
 
     .then(function (data) {
-        for (let i = 5; i < 10; i++) {
+        for (let i = 6; i < 11; i++) {
             let pelicula = data.results[i].title
             let pic = data.results[i].poster_path
             let fecha = data.results[i].release_date
@@ -113,7 +113,7 @@ fetch(bestRated)
     })
 
     .then(function (data) {
-        for (let i = 10; i < 15; i++) {
+        for (let i = 11; i < 16; i++) {
             let pelicula = data.results[i].title
             let pic = data.results[i].poster_path
             let fecha = data.results[i].release_date
